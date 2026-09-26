@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuraGames</title>
+<meta name="description" content="AuraGames — mobile games for Android.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a2e; --muted: #5a5a72;
+    --accent: #6c4ee0; --card: #f5f4fb; --border: #e3e0f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16121f; --fg: #f0eef8; --muted: #a9a4bd;
+      --accent: #a892ff; --card: #1f1a2e; --border: #2e2741;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 0; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .tag { color: var(--muted); margin: 0 0 2.5rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem;
+  }
+  .card h2 { font-size: 1.1rem; margin: 0 0 .4rem; }
+  .card p { margin: 0; color: var(--muted); }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AuraGames</h1>
+  <p class="tag">Mobile games for Android.</p>
+
+  <div class="card">
+    <h2>Sort &amp; Reveal: Color Puzzle</h2>
+    <p>A relaxing color-sorting puzzle. Every level you solve reveals another
+       piece of a hidden pixel-art picture. <a href="/sort-reveal/privacy">Privacy policy</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Questions, bug reports or feedback:
+       <a href="mailto:auragames007@gmail.com">auragames007@gmail.com</a></p>
+  </div>
+
+  <footer>© 2026 AuraGames</footer>
+</main>
+</body>
+</html>
